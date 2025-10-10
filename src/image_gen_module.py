@@ -5,7 +5,7 @@ def sersic(width, height, xc, yc, k, n, inclination=0, rotation=0, n_arms=0, win
     """
     Compute the raw Sersic galaxy (no inclination or rotation) centered at (xc, yc)
     """
-    x, y = np.indices((width, height), dtype=float)
+    y, x = np.indices((width, height), dtype=float)
     x_rel = x - xc
     y_rel = y - yc
 
